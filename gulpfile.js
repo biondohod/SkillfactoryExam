@@ -1,7 +1,7 @@
 import gulp from 'gulp';
 import plumber from 'gulp-plumber';
 import srcmap from 'gulp-sourcemaps';
-import dartSass from 'sass';
+import * as dartSass from 'sass';
 import gulpSass from 'gulp-sass';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
@@ -17,7 +17,7 @@ const sass = gulpSass(dartSass);
 //Styles
 
 gulp.task('styles', async () => {
-    return gulp.src("./src/assets/sass/styles.scss")
+    return gulp.src("./src/styles/styles.scss")
         .pipe(plumber())
         .pipe(srcmap.init())
         .pipe(sass().on('error', sass.logError))
