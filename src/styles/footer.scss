@@ -1,0 +1,135 @@
+.footer {
+  background: #07070C;
+  padding: 90px 90px 105px;
+
+  &__content {
+    display: grid;
+    gap: 40px;
+  }
+
+  &__info {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 40px;
+  }
+
+  &__title {
+    color: var(--white-100, #FFF);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__link {
+    display: flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    text-decoration: none;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    padding: 55px 71.5px;
+    border-radius: 60px;
+    border: 1px solid #585858;
+    background: #1A1A1F;
+  }
+
+  &__subscription {
+    width: 268px;
+    color: var(--white-100, #FFF);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  &__form {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__input {
+    display: flex;
+    width: 556px;
+    padding: 23.5px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 15px 44px;
+    background: var(--Black-100, #07070C);
+    color: var(--white-100, #FFF);
+  }
+
+  &__btn {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    bottom: 10px;
+  }
+
+  &__copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--Black-10, var(--Black-10, #F4F4F6));
+    span {
+      font-weight: 300;
+
+    }
+  }
+
+}
+
+.contacts {
+  &__item {
+    display: flex;
+    padding-left: 31px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+
+    a {
+        color: white;
+        text-decoration: none;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+
+    &--address {
+      background: url("../img/address.svg") no-repeat left center;
+    }
+
+    &--mail {
+      background: url("../img/mail.svg") no-repeat left center;
+    }
+  }
+}

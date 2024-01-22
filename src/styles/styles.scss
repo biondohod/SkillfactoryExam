@@ -1,6 +1,9 @@
 @import "header";
 @import "introduce";
 @import "advantages";
+@import "faq";
+@import "banner";
+@import "footer";
 
 .visually-hidden {
   position: absolute;
@@ -34,7 +37,15 @@ body {
 }
 
 .main {
-  padding: 100px 50px;
+  padding-top: 100px;
+
+  &__wrapper {
+    background: var(--Primary-10, #FFFCFB);
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
 }
 
 .btn {

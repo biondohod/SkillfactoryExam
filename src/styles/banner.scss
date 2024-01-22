@@ -1,0 +1,38 @@
+.banner {
+  padding: 78.5px 60px;
+  border-radius: 60px;
+  border: 1px solid #FFF;
+  background: var(--Primary-100, #FC552F);
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .btn {
+      width: 257px;
+    }
+  }
+
+  &__left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__title {
+    color: var(--white-100, #FFF);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  &__description {
+    color: var(--white-100, #FFF);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}

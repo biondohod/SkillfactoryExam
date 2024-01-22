@@ -24,7 +24,7 @@ gulp.task('styles', async () => {
         .pipe(postcss([
             autoprefixer()
         ]))
-        .pipe(csso())
+        // .pipe(csso())
         .pipe(rename("style.min.css"))
         .pipe(srcmap.write("."))
         .pipe(gulp.dest('./build/css'))
@@ -70,7 +70,7 @@ gulp.task("webpimg", async () => {
 gulp.task("copy", async () => {
     return gulp.src ([
         "./src/assets/fonts/**/*.{woff,woff2}",
-        "./src/assets/img/**/*.svg",
+        "./src/img/**/*.{png,jpg,svg}",
         "./src/*.ico",
         // "./src/js/*.js",
         // "./src/robots.txt",
