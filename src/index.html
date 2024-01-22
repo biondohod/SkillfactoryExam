@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta charset="UTF-8">
     <title>MUAI</title>
     <link rel="stylesheet" href="css/style.min.css">
@@ -20,7 +21,12 @@
             <li class="header__item"><a href="#" class="header__link">Contact</a></li>
         </ul>
     </div>
-    <button class="btn btn--orange">Get Started</button>
+    <div>
+        <button class="btn btn--orange header__btn">Get Started</button>
+        <button class="header__btn-mobile">
+            <span class="visually-hidden">Open burger menu.</span>
+        </button>
+    </div>
 </header>
 <main class="main">
     <section class="introduce">
@@ -199,14 +205,15 @@
                     <a href="#" class="footer__link">Contact</a>
                 </li>
             </ul>
+            <button class="btn btn--orange footer__btn--mobile">Get Started</button>
             <ul class="footer__contacts">
-                <li class="contacts__item contacts__item--address">Java,Indonesia</li>
+                <li class="contacts__item contacts__item--address">Java, Indonesia</li>
                 <li class="contacts__item contacts__item--mail">
-                    <a href = "mailto:Yourmail@mail.com">Yourmail@mail.com</a>
+                    <a href="mailto:Yourmail@mail.com">Yourmail@mail.com</a>
                 </li>
                 <li class="contacts__item contacts__item--mail">Your Instagram</li>
             </ul>
-            
+
         </div>
         <div class="footer__wrapper">
             <div class="footer__subscription">
